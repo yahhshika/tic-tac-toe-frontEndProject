@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playwrite+ES+Deco+Guides&family=Playwrite+IE+Guides&family=Rubik+Vinyl&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.inter-rubik{
+    font-family: "Rubik Vinyl";
+    font-optical-sizing: auto;
+    font-weight: 1000;
+    font-style: normal;
+  }
+.inter-font {
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+}
+.inter-edu {
+    font-family: "Edu AU VIC WA NT Arrows", serif;
+    font-optical-sizing: auto;
+    font-weight: 1000;
+    font-style: normal;
+}
+
+
+.navbar{
+    height: 55px;
+    background-color: rgba(72, 18, 18, 0.3);
+    display: flex;
+    align-items: center;
+    padding: 3px;
+    box-sizing:border-box ;
+    
+}
+.navbar ul{
+    list-style: none;
+    font-size: 45px;
+    text-align: center;
+    /* font-family:Verdana, Geneva, Tahoma, sans-serif; */
+    /* font-weight: 900; */
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 22px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3,15vh);
+    grid-template-rows: repeat(3,10vw);
+    margin-right: 200px;
+}
+.part{
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 76px;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+}
+.part:hover{
+    background-color: rgba(178, 147, 206,0.2);
+}
+.infoinside{
+    font-size: 63px;
+}
+.imgbox{
+    display: flex;
+    justify-content: center;
+}
+.imgbox img{
+    height: 193px;
+    width: 0;
+    transition: width 1s ease-in-out;
+    
+}
+.reset{
+    background-color: rgb(92, 13, 13);
+    color: azure;
+    padding-top: 23px;
+    height: 20px;
+    width: 158px;
+    border: 0px;
+    border-radius: 27px;
+    font-size: 28px;
+    padding-bottom: 53px;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    
+}
+.btn{
+    width: 100vw;
+    position: fixed;
+    bottom: 14px;
+    display: flex;
+    justify-content: center;
+}
+.reset:hover{
+    box-shadow: 0px 5px 3px 2px  rgba(121, 101, 101,0.6);
+    /* text-decoration: overline; */
+    transition: all 0.08s ease-in;
+    font-size: 30px;
+}
+ body {
+    background: linear-gradient(to right, #ffd25f, #e0dbd7); /* Gradient from coral to light coral*/
+}
+ 
+
+  /* body {
+    background: repeating-linear-gradient(45deg, #606dbc, #606dbc 10px, #465298 10px, #465298 20px);
+  } ==> will create spikes like structure*/
+
+
+
+
+
+  /* body {
+    background: radial-gradient(circle, #ff7e5f, #feb47b); /* Radial gradient from coral to light coral */
+
+
+
+
+
+
+
+
+/* ==============================utility classes=============== */
+.bl{
+    border-left: 0;
+}
+.bt{
+    border-top: 0;
+ 
+}
+.br{
+    border-right: 0;
+
+}
+.bb{
+    border-bottom: 0;
+}
+
+/* ================================ responsiveness ================================== */
+@media (max-width: 1060px) {
+    .containerX{
+        display: flex;
+        justify-content: center;
+        margin-top: 35px;
+        margin-bottom: 50px;
+    }
+    .container{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .grid{
+        margin-right: 0px;
+        grid-template-columns: repeat(3,15vh);
+        grid-template-rows: repeat(3,20vw);
+
+    }
+    .info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    /* .btn{
+        bottom: 0px;
+    } */
+    
+
+}
