@@ -22,7 +22,7 @@ function checkWin() {
         [2, 4, 6]
 
     ]
-    a.forEach(e => {
+    Array.from(a).forEach(e => {
         if ((inside[e[0]].innerText === inside[e[1]].innerText) && (inside[e[0]].innerText === inside[e[2]].innerText) && inside[e[0]].innerText !== "") {
             isgameover = true;
             document.querySelector('.infoinside').innerText = inside[e[0]].innerText + " Won!!!";
@@ -45,7 +45,7 @@ Array.from(boxes).forEach(e => {
 
         if (boxtext.innerText === "" && !isgameover) {
             boxtext.innerText = turn;
-            console.log(turn);
+            // console.log(turn);
             console.log(typeof turn);
             turn = changeturn();
             turnAudio.play();
